@@ -1,0 +1,33 @@
+Model: "sequential_8"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ rescaling_8 (Rescaling)     (None, 256, 256, 3)       0         
+                                                                 
+ random_flip_7 (RandomFlip)  (None, 256, 256, 3)       0         
+                                                                 
+ conv2d_24 (Conv2D)          (None, 254, 254, 16)      448       
+                                                                 
+ dropout_14 (Dropout)        (None, 254, 254, 16)      0         
+                                                                 
+ max_pooling2d_16 (MaxPoolin  (None, 63, 63, 16)       0         
+ g2D)                                                            
+                                                                 
+ conv2d_25 (Conv2D)          (None, 61, 61, 32)        4640      
+                                                                 
+ dropout_15 (Dropout)        (None, 61, 61, 32)        0         
+                                                                 
+ conv2d_26 (Conv2D)          (None, 59, 59, 64)        18496     
+                                                                 
+ max_pooling2d_17 (MaxPoolin  (None, 14, 14, 64)       0         
+ g2D)                                                            
+                                                                 
+ flatten_8 (Flatten)         (None, 12544)             0         
+                                                                 
+ dense_8 (Dense)             (None, 3)                 37635     
+                                                                 
+=================================================================
+Total params: 61,219
+Trainable params: 61,219
+Non-trainable params: 0
+_________________________________________________________________
